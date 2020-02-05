@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: rgb(255, 218, 185)
+}
+table{width: 100%}
+h1{
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: chocolate; 
+    text-align: center;
+}
+.nomor{
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: rgb(128, 128, 128);
+    text-align: center
+}
+.nama{
+    font-weight: bolder;
+    font-size: 25px;
+    background-color:rgb(235, 157, 157);
+    text-align: center
+}
+.jenis{
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: rgb(128, 128, 128);
+    text-align: center
+}
+.umur{
+    font-weight: bolder;
+    font-size: 25px;
+    background-color:rgb(235, 157, 157);
+    text-align: center
+}
