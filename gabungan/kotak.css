@@ -1,0 +1,81 @@
+.wrapper{
+    display: flex;
+    left: 500px;
+    position: relative;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item:hover{
+    border-radius: 100%;
+}
+.warna1{
+    background-image: linear-gradient(rgb(168, 81, 96),pink);
+    width: 70px;
+    height: 72px;
+    padding: 19px;
+    margin: 100px;
+}
+.warna2{
+    background-image: linear-gradient(rgba(138, 88, 59, 0.774),pink);
+    width: 70px;
+    height: 72px;
+    padding: 19px;
+    margin: 100px;
+}
+.warna3{
+    background: linear-gradient(rgb(129, 73, 83),pink);
+    width: 70px;
+    height: 72px;
+    padding: 19px;
+    margin: 100px;
+}
+/* css untuk kotak 1 */
+/* .kotak1{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(rgba(240, 169, 159, 0.74));
+}
+.kotak1:hover{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(rgb(156, 58, 58));
+    padding: 19px;
+    margin: 100px;
+    border-radius: 100px;
+} */
+/* close */
+/* css untuk kotak 2 */
+/* .kotak1{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(rgba(240, 169, 159, 0.74));
+} */
+/* .kotak1:hover{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(rgb(156, 58, 58));
+    padding: 19px;
+    margin: 100px;
+    border-radius: 100px;
+} */
+/* close */
+/* css untuk kotak 3 */
+/* .kotak1{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(rgba(240, 169, 159, 0.74));
+} */
+/* .kotak1:hover{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(rgb(156, 58, 58));
+    padding: 19px;
+    margin: 100px;
+    border-radius: 100px;
+} */
+/* close */
