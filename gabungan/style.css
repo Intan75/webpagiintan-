@@ -9,12 +9,12 @@ header{
 li{
     list-style: none;
     margin: 0 15px;
-    color: pink;
+    color: rgb(233, 142, 155);
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .menu{
-    background-color: pink;
+    background-color: rgb(231, 140, 157);
 }
 .menu ul{
     list-style-type: none;
@@ -26,13 +26,13 @@ li{
     display: flex
 }
 .menu li{
-    color: palevioletred;
+    color: rgb(212, 16, 84);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 .menu li :hover{
-    background-color:pink
+    background-color: rgb(224, 146, 159)
 }
 .dropdown:hover .dropdown-content{
     display: block;

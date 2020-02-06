@@ -1,6 +1,6 @@
-*{
+/* *{
     background-color: rgb(218, 122, 138)
-}
+} */
 
 
 h2{
@@ -12,10 +12,10 @@ h2{
 }
 
 .sylp-slider{
-    border: 10px solid rgb(247, 192, 145);
+    border: 5px solid rgb(167, 99, 110);
     position: relative;
     overflow: hidden;
-    background: peachpuff
+    background: rgb(212, 119, 135)
 }
 .sylp-slider{
     margin: 20px auto;

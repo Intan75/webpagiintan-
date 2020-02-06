@@ -1,6 +1,6 @@
-.wrapper{
+/* .wrapper{
     display: flex;
-}
+} */
 .item{
     width: 100px;
     height: 100px;
@@ -17,6 +17,8 @@
     height: 100px;
     padding: 19px;
     margin: 100px;
+    position: block;
+    
 }
 .warna2{
     background-image: linear-gradient(rgba(165, 85, 38, 0.774),pink);
