@@ -3,7 +3,6 @@
 }
 
 
-
 h2{
     font-family: cursive;
     font-weight: normal;
@@ -20,17 +19,17 @@ h2{
 }
 .sylp-slider{
     margin: 20px auto;
-    width: 768px;
+    width: 800px;
     height: 450px;
 }
 .isi-slider img{
-    width: 768px;
+    width: 800px;
     height: 450px;
     float: left
 }
 .isi-slider{
     position: absolute;
-    width: 3900px;
+    width: 4000px;
     /* pengaturan durasi lama tampil gambar bisa diatur dibawah ini */
     animation-name:"slider";
     animation-duration: "16s";
@@ -160,7 +159,7 @@ h2{
 		opacity: 0; 
 	}     
 	50% {
-		left: -1536px; opacity: 1; 
+		left: -1600px; opacity: 1; 
 	}     
 	70% {
 		left: -1536px; opacity: 1; 
@@ -202,10 +201,10 @@ h2{
 		opacity: 0; 
 	}     
 	25% {
-		left: -768px; opacity: 1; 
+		left: -800px; opacity: 1; 
 	}     
 	45% {
-		left: -768px; opacity: 1; 
+		left: -800px; opacity: 1; 
 	}     
 	46% {
 		opacity: 0; 
@@ -214,10 +213,10 @@ h2{
 		opacity: 0; 
 	}     
 	50% {
-		left: -1536px; opacity: 1; 
+		left: -1600px; opacity: 1; 
 	}     
 	70% {
-		left: -1536px; opacity: 1; 
+		left: -1600px; opacity: 1; 
 	}     
 	72% {
 		opacity: 0; 
@@ -226,13 +225,13 @@ h2{
 		opacity: 0; 
 	}    
 	75% {
-		left: -2304px; opacity: 1; 
+		left: -2400px; opacity: 1; 
 	}   	
 	95% {
-		left: -2304px; opacity: 1; 
+		left: -2400px; opacity: 1; 
 	}   	
 	97% { 
-		left: -2304px; opacity: 0; 
+		left: -2400px; opacity: 0; 
 	} 
 
 	100% {
