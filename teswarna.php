@@ -3,6 +3,7 @@ include 'header.php';
 ?>
 
 <form action="" method="POST">
+
     <input type="text" name="color">
     <input type="submit" name="tambah" value="tampil">
 </form>

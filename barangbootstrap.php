@@ -57,34 +57,34 @@
         </form>
     </div>
     </nav>
-<div class="container">
-<form method="POST">
-    <div class="form-group">
-        <label for="barang">Harga barang</label>
-        <input type="number" class="form-control col-sm-2" name="barang">
+    <div class="container">
+    <form method="POST">
+        <div class="form-group">
+            <label for="barang">Harga barang</label>
+            <input type="number" class="form-control col-sm-2" name="barang">
+        </div>
+        <div class="form-group">
+            <label for="diskon">Diskon</label>
+            <input type="number" class="form-control col-sm-2" name="diskon">
+        </div>
+        <!-- <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <button type="submit" name="input" class="btn btn-secondary">Input</button>
+        </form>
+        <!-- boostsrap -->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.bundle.js"></script>
+        <script src="assets/js/bootstrap.bundle.js.map"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js.map"></script>
+        <!-- for bootstrap -->
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/bootstrap.js.map"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.min.js.map"></script>
     </div>
-    <div class="form-group">
-        <label for="diskon">Diskon</label>
-        <input type="number" class="form-control col-sm-2" name="diskon">
-    </div>
-    <!-- <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div> -->
-    <button type="submit" name="input" class="btn btn-secondary">Input</button>
-    </form>
-    <!-- boostsrap -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.bundle.js"></script>
-    <script src="assets/js/bootstrap.bundle.js.map"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js.map"></script>
-    <!-- for bootstrap -->
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/bootstrap.js.map"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap.min.js.map"></script>
-</div>
 <footer class="page-footer font-small blue pt-4">
 
 <!-- Footer Links -->
