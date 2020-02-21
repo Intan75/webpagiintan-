@@ -15,7 +15,7 @@ include 'header.php';
     <title>Login2</title>
 </head>
 <body>
-    <form action="" method="POST">
+    <form action="proses/proses_login.php" method="POST">
         <label>User:</label>
         <input type="text" name="user"><br><br>
         <label>Password:</label>
@@ -27,20 +27,6 @@ include 'header.php';
 
 
 
-    <?php
-    if(isset($_POST['tambah'])){
-        $username=$_POST['user'];
-        $password=$_POST['pass'];
-
-        if ($username=="admin"and$password=="admin123"){
-            header ('location: proses_nilai.php');
-        }elseif($username=="siswa"and $password=="siswa123"){
-            header ('location: biodata.php');
-        }else{
-            echo "Login gagal";
-        }
-    }
-    ?>
 
 <br>
 <br>
