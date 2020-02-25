@@ -323,8 +323,13 @@ body {
                 Sign Up
                 <span class="underline"></span>
                 </button>
-                <form class="form form-signup" action="proses/" method="POST">
+                <form class="form form-signup" action="proses/proses_registrasi.php" method="POST">
                 <fieldset>
+				<!-- <div class="input-block">
+                    <label for="id">Id</label>
+                    <input id="id" type="text" name="id" required>
+                    </div> -->
+
                     <legend>Please, enter your email, password and password confirmation for sign up.</legend>
                     <div class="input-block">
                     <label for="signup-email">E-mail</label>
@@ -338,17 +343,17 @@ body {
 
                     <div class="input-block">
                     <label for="signup-password">Password</label>
-                    <input id="signup-password" type="password" required>
+                    <input id="signup-password" type="password" name="password" required>
                     </div>
                     <div class="input-block">
                     <label for="signup-level">level</label>
-                    <select name="" id="">
-                        <option value="pengguna">Pengguna</option>
+                    <select name="level" id="">
+                        <option value="pengguna">Penjual</option>
                         <option value="pembeli">Pembeli</option>
                     </select>
                     </div>
                 </fieldset>
-                <button type="submit" class="btn-signup">Continue</button>
+                <button type="submit" class="btn-signup" name="regis" >Continue</button>
                 </form>
             </div>
             </div>
