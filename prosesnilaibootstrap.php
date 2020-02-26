@@ -21,38 +21,44 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css.map">
 </head>
 <body>
-<form method="POST">
+<div class="container">
+<form method="POST" action="proses/proses_nilai.php">
+    <!-- <div class="form-group">
+        <label for="id">Id</label>
+        <input type="number" class="form-control col-sm-2" name="id">
+    </div> -->
+
     <div class="form-group">
         <label for="NIM">NIM</label>
-        <input type="number" class="form-control col-sm-2" name="nim">
+        <input type="number" class="form-control col-sm-3" name="nim">
     </div>
     <div class="form-group">
         <label for="Nama">Nama</label>
-        <input type="text" class="form-control col-sm-2" name="nama">
+        <input type="text" class="form-control col-sm-3" name="nama">
     </div>
     <div class="form-group">
-        <label for="Nama">Jurusan</label>
-        <input type="text" class="form-control col-sm-2" name="jurusan">
+        <label for="jurusan">Jurusan</label>
+        <input type="text" class="form-control col-sm-3" name="jurusan">
     </div>
     <div class="form-group">
-        <label for="Nama">Nilai Harian</label>
-        <input type="number" class="form-control col-sm-2" name="harian">
+        <label for="harian">Nilai Harian</label>
+        <input type="number" class="form-control col-sm-3" name="harian">
     </div>
     <div class="form-group">
-        <label for="Nama">Nilai quis</label>
-        <input type="number" class="form-control col-sm-2" name="quis">
+        <label for="quis">Nilai quis</label>
+        <input type="number" class="form-control col-sm-3" name="quis">
     </div>
     <div class="form-group">
-        <label for="Nama">Nilai UTS</label>
-        <input type="number" class="form-control col-sm-2" name="uts">
+        <label for="uts">Nilai UTS</label>
+        <input type="number" class="form-control col-sm-3" name="uts">
     </div>
     <div class="form-group">
-        <label for="Nama">Nilai UAS</label>
-        <input type="text" class="form-control col-sm-2" name="uas">
+        <label for="uas">Nilai UAS</label>
+        <input type="text" class="form-control col-sm-3" name="uas">
     </div>
     <button type="submit" name="input" class="btn btn-primary">Input</button>
 </form>
-
+</div>
 
 
     <!-- for bundle -->
@@ -70,55 +76,55 @@
 </html>
 
 <?php
-    if(isset($_POST['input'])){
-        $NIM=$_POST ['nim'];
-        $nama=$_POST ['nama'];
-        $jurusan=$_POST ['jurusan'];
-        $harian=$_POST ['harian'];
-        $quis=$_POST ['quis'];
-        $uts=$_POST ['uts'];
-        $uas=$_POST ['uas'];
-        $nilai=($harian*10/100)+($quis*15/100)+($uts*35/100)+($uas*40/100);
+    // if(isset($_POST['input'])){
+    //     $NIM=$_POST ['nim'];
+    //     $nama=$_POST ['nama'];
+    //     $jurusan=$_POST ['jurusan'];
+    //     $harian=$_POST ['harian'];
+    //     $quis=$_POST ['quis'];
+    //     $uts=$_POST ['uts'];
+    //     $uas=$_POST ['uas'];
+    //     $nilai=($harian*10/100)+($quis*15/100)+($uts*35/100)+($uas*40/100);
 
-        echo "NIM $NIM <br>";
-        echo "bernama $nama <br>";
-        echo "jurusan $jurusan <br>";
-        echo "memperoleh nilai harian $harian <br>";
-        echo "nilai quis $quis <br>";
-        echo "nilai uts $uts <br>";
-        echo "dan nilai uas sebesar $uas <br>";
-    }
+    //     echo "NIM $NIM <br>";
+    //     echo "bernama $nama <br>";
+    //     echo "jurusan $jurusan <br>";
+    //     echo "memperoleh nilai harian $harian <br>";
+    //     echo "nilai quis $quis <br>";
+    //     echo "nilai uts $uts <br>";
+    //     echo "dan nilai uas sebesar $uas <br>";
+    // }
 
+    include 'koneksi/koneksi.php';
 
-        if($nilai<=50){
-            echo"
-            <div class='alert alert-danger' role='alert'>
-            Grade yang diperoleh oleh $nama dengan nim $NIM jurusan $jurusan dengan nilai $nilai adalah E
-            </div>";
-        }elseif ($nilai<=65){
-            echo"
-            <div class='alert alert-success' role='alert'>
-            Grade yang diperoleh oleh $nama dengan nim $NIM jurusan $jurusan dengan nilai $nilai adalah D
-            </div>";
-        }elseif ($nilai<=72){
-            echo"
-            <div class='alert alert-secondary' role='alert'>
-            Grade yang diperoleh oleh $nama dengan nim $NIM jurusan $jurusan dengan nilai $nilai adalah C
-            </div>";
-        }elseif ($nilai<=83){
-            echo"
-            <div class='alert alert-primary' role='alert'>
-            Grade yang diperoleh oleh $nama dengan nim $NIM  jurusan $jurusan dengan nilai $nilai adalah B
-            </div>";
-        }elseif ($nilai<=100 || $nilai=100){
-            echo"
-            <div class='alert alert-primary' role='alert'>
-            Grade yang diperoleh oleh $nama dengan nim $NIM jurusan $jurusan dengan nilai $nilai adalah A
-            </div>";
-        }else{
-            echo"
-            <div class='alert alert-light' role='alert'>
-            $nama dengan nim $nim jurusan $jurusan dinyatakan tidak lulus 
-            </div>";
+        $tampil_nilai=mysqli_query($koneksi,"select * from mahasiswa") or die (mysqli_error ($tampil_nilai));
+
+        while($data=mysqli_fetch_array ($tampil_nilai)){
+            if($data['nilai_akhir']<=50){
+                echo"
+                <div class='alert alert-danger' role='alert'>
+                Nama : ".$data['nama_mahasiswa']." dengan Nim :".$data['nim']." dan Jurusan :".$data['jurusan']." memperoleh nilai sebesar ".$data['nilai_akhir']."  maka dia mendapat grade E
+                </div>";
+            }elseif ($data['nilai_akhir']<=65){
+                echo"
+                <div class='alert alert-success' role='alert'>
+                Nama : ".$data['nama_mahasiswa']." dengan Nim :".$data['nim']." dan Jurusan :".$data['jurusan']." memperoleh nilai sebesar ".$data['nilai_akhir']."  maka dia mendapat grade D
+                </div>";
+            }elseif ($data['nilai_akhir']<=72){
+                echo"
+                <div class='alert alert-secondary' role='alert'>
+                Nama : ".$data['nama_mahasiswa']." dengan Nim :".$data['nim']." dan Jurusan :".$data['jurusan']." memperoleh nilai sebesar ".$data['nilai_akhir']."  maka dia mendapat grade C
+                </div>";
+            }elseif ($data['nilai_akhir']<=83){
+                echo"
+                <div class='alert alert-primary' role='alert'>
+            Nama : ".$data['nama_mahasiswa']." dengan Nim :".$data['nim']." dan Jurusan :".$data['jurusan']." memperoleh nilai sebesar ".$data['nilai_akhir']."  maka dia mendapat grade B
+                </div>";
+            }elseif ($data['nilai_akhir']<=100 || $nilai=100){
+                echo"
+                <div class='alert alert-primary' role='alert'>
+                Nama : ".$data['nama_mahasiswa']." dengan Nim :".$data['nim']." dan Jurusan :".$data['jurusan']." memperoleh nilai sebesar ".$data['nilai_akhir']."  maka dia mendapat grade A
+                </div>";
+            }
         }
         ?>
