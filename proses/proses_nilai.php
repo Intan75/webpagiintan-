@@ -3,9 +3,10 @@ include '../koneksi/koneksi.php';
 
 if (isset ($_POST['input'])){
     $id=md5(uniqid());
-    $nim=$_POST['nim'];
+    $nim=$_POST['nim'];                                                                                                                                                                                                                             
     $nama_mahasiswa=$_POST['nama'];
     $jurusan=$_POST['jurusan'];
+    $matakuliah=$_POST['mata_kuliah'];
     $nilai_harian=$_POST['harian'];
     $nilai_quis=$_POST['quis'];
     $nilai_uts=$_POST['uts'];
@@ -25,7 +26,7 @@ if (isset ($_POST['input'])){
     }
 
 
-    $query_nilai=mysqli_query($koneksi,"insert into mahasiswa values ('$id','$nim','$nama_mahasiswa','$jurusan','$nilai_harian','$nilai_quis','$nilai_uts','$nilai_uas','$nilai_akhir','$grade')") or die 
+    $query_nilai=mysqli_query($koneksi,"insert into mahasiswa values ('$id','$nim','$nama_mahasiswa','$jurusan','$matakuliah','$nilai_harian','$nilai_quis','$nilai_uts','$nilai_uas','$nilai_akhir','$grade')") or die 
     (mysqli_error($query_nilai));
 
     if($query_nilai){
