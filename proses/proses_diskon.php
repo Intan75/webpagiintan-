@@ -15,7 +15,7 @@ if (isset ($_POST ['input'])){
         if($diskon){
             echo "
             <script>alert ('Data berhasil diinput')
-            window.location.href='../barangbootstrap.php'
+            window.location.href='../prosesdiskon.php'
             </script>";
         }else{
             echo 'Data gagal diinput';

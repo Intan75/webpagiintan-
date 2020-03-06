@@ -8,9 +8,9 @@
         $alamat_saya=$_POST['alamat'];
         $no_hp=$_POST['no_hp'];
         $email=$_POST['email'];
-        $hobby1=$_POST['hobby1'];
-        $hobby2=$_POST['hobby2'];
-        $hobby3=$_POST['hobby3'];
+        $hobby1=(!empty($_POST['hobby1'])?$_POST['hobby1']:'');
+        $hobby2=(!empty($_POST['hobby1'])?$_POST['hobby2']:'');
+        $hobby3=(!empty($_POST['hobby1'])?$_POST['hobby3']:'');
         $tanggal_lahir=$_POST['tanggal_lahir'];
         $tempat_lahir=$_POST['tempat_lahir'];
         $jenis_kelamin=$_POST['jk'];

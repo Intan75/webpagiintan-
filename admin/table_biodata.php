@@ -59,6 +59,7 @@
                                                 <th>Tempat lahir</th>
                                                 <th>Jenis kelamin</th>
                                                 <th>Foto</th>
+                                                <th>Aksi</th>
                                             </tr>
                                         </thead>
                                         <?php
@@ -83,6 +84,7 @@
                                                 <td><?php echo $data['tempat_lahir']?></td>
                                                 <td><?php echo $data['jenis_kelamin']?></td>
                                                 <td><?php echo"<img width='50px' src='../upload/".$data['foto']."'>";?></td> 
+                                                <td><a href="../proses/proseshapusbiodata.php?id_biodata=<?php echo $data['id_biodata']?>" type="submit" class="btn btn-danger">Hapus </a></td>
                                             </tr>
                                         </tbody>
                                         <?php 
