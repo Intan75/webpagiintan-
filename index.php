@@ -1,8 +1,8 @@
 <?php
 include 'header.php';
 ?>
-    <div class="container-fluid">
-    <!-- sintax navbar -->
+    <!-- <div class="container-fluid">
+    sintax navbar
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Intans</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@ include 'header.php';
         </form>
     </div>
     </nav>
-    <!-- tutup sintax navbar -->
+    tutup sintax navbar -->
     <!-- sintax slider  -->
         <div class="row">
             <div class="col-2"></div>

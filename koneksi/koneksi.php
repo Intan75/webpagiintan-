@@ -1,8 +1,8 @@
 
 <?php
     $server='localhost';
-    $username="root";
-    $password="";
+    $username="u7022108_intan";
+    $password="prati";
     $db="barang";
 
     $koneksi=mysqli_connect($server,$username,$password,$db)or die(mysqli_error($koneksi));
