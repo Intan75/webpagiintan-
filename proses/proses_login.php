@@ -21,7 +21,7 @@
                 $_SESSION['status']='login';
 
                 echo "<script>
-                alert (window.location.href='../barangbootstrap.php');
+                alert (window.location.href='../prosesdiskon.php');
                 </script>";
             }
         }else{
